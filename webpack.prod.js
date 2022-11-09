@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin       = require('html-webpack-plugin'); 
 const MiniCssExtractPlugin    = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const MinifyPlugin            = require('babel-minify-webpack-plugin');
+
 const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 
 module.exports = {
@@ -14,13 +14,7 @@ module.exports = {
     },
     module: {
         rules: [
-            { 
-                test: /\.js$/, 
-                exclude: /node_modules/, 
-                use: [
-                    'babel-loader'
-                ]
-            },
+
             {
                 test: /\.css$/,
                 exclude: /styles\.css$/,
@@ -67,8 +61,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].[contentHash].css',
             ignoreOrder: false
-        }),
-        new MinifyPlugin(),
+        }),        
         new CleanWebpackPlugin(),
     ]
 
