@@ -3,10 +3,11 @@ body {
     background-image: url("./assets/space_background.jpg");
 }
 
-#principal {
+.grid-container {
     
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 10px;
+    grid-row-gap: 5px;
     width: 50%;
     margin: auto;
     text-align: center;
@@ -17,10 +18,12 @@ body {
 
 .timer {
 
+    
     background-color: #252525;
     height: 100%;
-    width: 40PX;
+    width: 80%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     
-
 }
