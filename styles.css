@@ -5,8 +5,22 @@ body {
 
 #principal {
     
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
     width: 50%;
     margin: auto;
     text-align: center;
     margin-top: 15%;
+    display: grid;
+    color:antiquewhite
+}
+
+.timer {
+
+    background-color: #252525;
+    height: 100%;
+    width: 40PX;
+    text-align: center;
+    
+
 }
