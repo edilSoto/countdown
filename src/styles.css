@@ -1,0 +1,39 @@
+body {
+
+    background-image: url("./assets/space_background.jpg");
+}
+
+.grid-container {
+    
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 100px;
+    gap: 0px 10px;    
+    width:fit-content;
+    margin-left: auto;
+    padding-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15%;
+    display: grid;
+    color:antiquewhite
+}
+
+.timer {
+
+    background-color: #252525;
+    height: 100%;
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25%;
+    font-size: larger;
+}
+
+#inputContainer {
+
+    text-align: center;
+    width: auto;
+    font-size: large;
+    color: antiquewhite;
+}
